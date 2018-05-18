@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "oauth": "^0.9.12",
-    "request": "^2.83.0"
+    "request": "https://github.com/Dertod25/request.git"
   },
   "repository": {
     "type": "git",
