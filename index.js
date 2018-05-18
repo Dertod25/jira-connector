@@ -372,13 +372,14 @@ var JiraClient = module.exports = function (config) {
 
                 var req = requestLib(options);
                 var requestObj = null;
-
-                req.on('request', function(request) {
-                  requestObj = request;
+                console.log('________req',req)
+                req.on('request', function(request,self) {
+                    requestObj = request;
+                    console.log('________request',request)
                 });
 
                 req.on('response', function(response) {
-
+                    console.log('________response',response)
                     // Saving error
                     var error = response.statusCode.toString()[0] !== '2';
 
